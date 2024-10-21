@@ -56,6 +56,7 @@ public class Canvas
     private Canvas(String title, int width, int height, Color bgColour)
     {
         frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         canvas = new CanvasPane();
         frame.setContentPane(canvas);
         frame.setTitle(title);
