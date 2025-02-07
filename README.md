@@ -1,5 +1,11 @@
 # DreamHouse2024
 
+# Yo!
+
+## Yo! Yo!
+
+`fork` this repository and `clone` it to your local machine.
+
 These steps are the ones you saw demonstrated...
 
 ## Steps
