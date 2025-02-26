@@ -32,20 +32,103 @@ public class Picture
     public void draw()
     {
         wall = new Square();
-        wall.moveVertical(80);
-        wall.changeSize(100);
+        wall.changeColor("magenta");
+        wall.moveVertical(20);
+        wall.changeSize(50);
+        wall.moveHorizontal(5);
+        wall.moveVertical(90);
         wall.makeVisible();
+
+        wall = new Square();
+        wall.changeColor("magenta");
+        wall.moveVertical(20);
+        wall.changeSize(50);
+        wall.moveHorizontal(120);
+        wall.moveVertical(90);
+        wall.makeVisible();
+
+
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(15);
+        window.moveVertical(130);
+        window.makeVisible();
 
         window = new Square();
         window.changeColor("black");
-        window.moveHorizontal(20);
-        window.moveVertical(100);
+        window.moveHorizontal(15);
+        window.moveVertical(200);
+        window.makeVisible();
+
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(15);
+        window.moveVertical(180);
+        window.makeVisible();
+
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(15);
+        window.moveVertical(160);
+        window.makeVisible();
+
+        window = new Square();
+        window.changeColor("yellow");
+        window.moveHorizontal(130);
+        window.moveVertical(130);
+        window.makeVisible();
+
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(130);
+        window.moveVertical(160);
+        window.makeVisible();
+
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(130);
+        window.moveVertical(180);
+        window.makeVisible();
+
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(130);
+        window.moveVertical(200);
         window.makeVisible();
 
         roof = new Triangle();
-        roof.changeSize(50, 140);
-        roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.changeColor("blue");
+        roof.changeSize(20, 100);
+        roof.moveHorizontal(40);
+        roof.moveVertical(130);
+        roof.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("blue");
+        roof.changeSize(20, 100);
+        roof.moveHorizontal(150);
+        roof.moveVertical(130);
+        roof.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("green");
+        roof.changeSize(70, 30);
+        roof.moveHorizontal(100);
+        roof.moveVertical(150);
+        roof.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("green");
+        roof.changeSize(70, 30);
+        roof.moveHorizontal(100);
+        roof.moveVertical(250);
+        roof.makeVisible();
+
+        roof = new Triangle();
+        roof.changeColor("green");
+        roof.changeSize(70, 30);
+        roof.moveHorizontal(100);
+        roof.moveVertical(200);
         roof.makeVisible();
 
         sun = new Circle();
@@ -63,8 +146,8 @@ public class Picture
     {
         if(wall != null)   // only if it's painted already...
         {
-            wall.changeColor("black");
-            window.changeColor("white");
+            wall.changeColor("magenta");
+            window.changeColor("magenta");
             roof.changeColor("black");
             sun.changeColor("black");
         }
@@ -77,9 +160,9 @@ public class Picture
     {
         if(wall != null)   // only if it's painted already...
         {
-            wall.changeColor("red");
-            window.changeColor("black");
-            roof.changeColor("green");
+            wall.changeColor("magenta");
+            window.changeColor("yellow");
+            roof.changeColor("blue");
             sun.changeColor("yellow");
         }
     }
